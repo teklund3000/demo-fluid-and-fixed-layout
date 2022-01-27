@@ -1,1 +1,50 @@
 /* developer styles go here */
+/* start with generic css styling (* applies to all screens) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    gap: 2%;
+    /* OR instead of gap use justify-content: space-between; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header,
+footer {
+    background-color: #115194;
+    margin-bottom: 24px;
+}
+h1 {
+    padding: 48px;
+}
+nav {
+    background-color: #4bb19d;
+    padding: 16px;
+}
+.banner {
+    background-color: #b8bac3;
+    padding: 288px 0;
+    margin-bottom: 24px;
+}
+.promo {
+    background-color: #b0d892;
+    padding: 128px 0;
+    margin-bottom: 24px;
+    width: calc(96% / 3);
+}
+@media screen and (min-width: 1300px) {
+    .container {
+        width: 1700px;
+    }
+    
+}
